@@ -3,18 +3,18 @@
    ========================================= */
 :root {
     /* Paleta Desaturada (Estilo Cartucho Antigo) */
-    --background-dark: #0c142c;   /* Azul muito escuro para o fundo */
-    --container-bg: #f0eada;     /* Creme/Branco sujo para a 'tela' */
-    --text-main: #102c54;        /* Azul escuro para o texto principal */
+    --background-dark: #0c142c;   
+    --container-bg: #f0eada;     
+    --text-main: #102c54;        
     
-    --retro-orange: #e67e22;     /* Laranja queimado */
+    --retro-orange: #e67e22;     
     --retro-orange-light: #f39c12; 
-    --retro-blue: #1abc9c;       /* Teal/Azul ciano retro */
+    --retro-blue: #1abc9c;       
     --retro-blue-dark: #16a085;
     
-    --border-color: #3e2723;     /* Marrom escuro para bordas */
+    --border-color: #3e2723;     
 
-    --font-pixel: 'VT323', monospace; /* Fonte pixelada */
+    --font-pixel: 'VT323', monospace; 
 }
 
 /* =========================================
@@ -37,8 +37,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden; /* Para o efeito de scanline */
-    image-rendering: pixelated; /* Crucial para renderizar pixels nítidos */
+    overflow: hidden; 
+    image-rendering: pixelated; 
 }
 
 /* =========================================
@@ -56,9 +56,9 @@ body {
         rgba(0, 0, 0, 0.1) 50%,
         rgba(255, 255, 255, 0) 100%
     );
-    background-size: 100% 4px; /* Grossura das linhas */
+    background-size: 100% 4px; 
     z-index: 10;
-    pointer-events: none; /* Não interfere nos cliques */
+    pointer-events: none; 
     opacity: 0.6;
 }
 
@@ -70,8 +70,8 @@ body {
     width: 90%;
     max-width: 960px;
     height: 90vh;
-    border: 8px solid var(--border-color); /* Borda grossa em bloco */
-    box-shadow: inset 0 0 50px rgba(0,0,0,0.3); /* Sombra interna para 'curvatura' */
+    border: 8px solid var(--border-color); 
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.3); 
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -94,7 +94,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 4px;
-    text-shadow: 4px 4px 0 var(--border-color); /* Efeito 3D block */
+    text-shadow: 4px 4px 0 var(--border-color); 
 }
 
 .retro-nav ul {
@@ -129,7 +129,7 @@ body {
     flex: 1;
     padding: 2rem;
     gap: 2rem;
-    overflow-y: auto; /* Permite rolar o conteúdo interno */
+    overflow-y: auto; 
 }
 
 .news-feed {
@@ -149,7 +149,6 @@ body {
     margin-bottom: 1.5rem;
 }
 
-/* Bordas coloridas dinâmicas */
 .orange-border {
     border-color: var(--retro-orange-light);
 }
@@ -167,7 +166,6 @@ body {
     text-align: center;
 }
 
-/* Itens de Notícia */
 .news-item {
     display: flex;
     align-items: center;
@@ -180,7 +178,7 @@ body {
 }
 
 .blue-bg {
-    background-color: #e0f2f1; /* Variação leve do azul teal */
+    background-color: #e0f2f1; 
 }
 
 .news-item a {
@@ -193,7 +191,6 @@ body {
     text-decoration: underline;
 }
 
-/* Lista Pixelada na Sidebar */
 .pixel-list {
     list-style: none;
     padding: 1rem;
@@ -217,7 +214,6 @@ body {
     display: inline-block;
 }
 
-/* Simulação de ícones usando cores sólidas retro */
 .joystick {
     background-color: var(--retro-orange-light);
     border: 3px solid var(--border-color);
@@ -225,7 +221,7 @@ body {
 
 .ship {
     background-color: var(--retro-blue-dark);
-    border-radius: 50% 50% 0 0; /* Formato simples */
+    border-radius: 50% 50% 0 0; 
     border: 3px solid var(--border-color);
 }
 
@@ -239,183 +235,4 @@ body {
     padding: 1rem;
     font-size: 1.2rem;
     border-top: 4px solid var(--retro-orange-light);
-}/* =========================================
-   VARIÁVEIS DE CORES E FONTES
-   ========================================= */
-:root {
-    --branco-puro: #FFFFFF;
-    --branco-gelo: #F3F4F6;
-    --azul-profundo: #0F172A;
-    --azul-destaque: #1D4ED8;
-    --laranja-neon: #FF6600;
-    --laranja-hover: #E65C00;
-    
-    --fonte-titulos: 'Rajdhani', sans-serif;
-    --fonte-textos: 'Roboto', sans-serif;
-}
-
-/* =========================================
-   RESET BÁSICO
-   ========================================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--fonte-textos);
-    background-color: var(--branco-gelo);
-    color: var(--azul-profundo);
-    line-height: 1.6;
-}
-
-/* =========================================
-   CABEÇALHO (NAVBAR)
-   ========================================= */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--branco-puro);
-    padding: 1.5rem 5%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    border-bottom: 3px solid var(--azul-destaque);
-}
-
-.logo {
-    font-family: var(--fonte-titulos);
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--azul-profundo);
-    letter-spacing: 2px;
-}
-
-.logo span {
-    color: var(--laranja-neon);
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--azul-profundo);
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--laranja-neon);
-}
-
-/* =========================================
-   BOTÕES
-   ========================================= */
-.btn-primary, .btn-secondary {
-    font-family: var(--fonte-titulos);
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-primary {
-    background-color: var(--laranja-neon);
-    color: var(--branco-puro);
-    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.4);
-}
-
-.btn-primary:hover {
-    background-color: var(--laranja-hover);
-    transform: translateY(-2px);
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: var(--branco-puro);
-    border: 2px solid var(--laranja-neon);
-}
-
-.btn-secondary:hover {
-    background-color: var(--laranja-neon);
-    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.4);
-}
-
-/* =========================================
-   SEÇÃO HERO (DESTAQUE)
-   ========================================= */
-.hero {
-    background: linear-gradient(135deg, var(--azul-profundo) 0%, var(--azul-destaque) 100%);
-    color: var(--branco-puro);
-    padding: 8rem 5%;
-    text-align: center;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Efeito diagonal moderno */
-}
-
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.hero h1 {
-    font-family: var(--fonte-titulos);
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-}
-
-.hero h1 span {
-    color: var(--laranja-neon);
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-}
-
-/* =========================================
-   CARDS DE FUNCIONALIDADES
-   ========================================= */
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 4rem 5%;
-    margin-top: -3rem; /* Puxa os cards para cima da área azul */
-}
-
-.card {
-    background-color: var(--branco-puro);
-    padding: 2.5rem;
-    border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-    text-align: center;
-    flex: 1;
-    max-width: 350px;
-    border-top: 4px solid var(--azul-destaque);
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    border-color: var(--laranja-neon);
-}
-
-.card h3 {
-    font-family: var(--fonte-titulos);
-    font-size: 1.8rem;
-    color: var(--azul-profundo);
-    margin-bottom: 1rem;
-    text-transform: uppercase;
 }
