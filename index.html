@@ -1,45 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css.css">
+    <title>Retro Gamer Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Usaremos uma fonte pixelada do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">GAMER<span>ZONE</span></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Comunidade</a></li>
-            </ul>
-        </nav>
-        <button class="btn-primary">Junte-se a nós</button>
-    </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>O Seu Portal Definitivo de <span>E-Sports</span></h1>
-            <p>Feito por gamers, para gamers. Descubra as últimas novidades, análises profundas e conecte-se com a maior comunidade.</p>
-            <button class="btn-secondary">Explorar Jogos</button>
-        </div>
-    </section>
+    <!-- O efeito de scanline do monitor CRT -->
+    <div class="scanlines"></div>
 
-    <section class="features">
-        <div class="card">
-            <h3>Lançamentos</h3>
-            <p>Fique por dentro de tudo que está chegando para PC e Consoles.</p>
-        </div>
-        <div class="card">
-            <h3>Competitivo</h3>
-            <p>Acompanhe os torneios mundiais, tabelas e estatísticas dos times.</p>
-        </div>
-        <div class="card">
-            <h3>Fórum</h3>
-            <p>Discuta estratégias, monte seu esquadrão e faça novas amizades.</p>
-        </div>
-    </section>
+    <div class="main-container">
+        <header class="retro-header">
+            <h1 class="pixel-title">PIXEL PLAYGROUNDS</h1>
+            <nav class="retro-nav">
+                <ul>
+                    <li><a href="#" class="active">INÍCIO</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                    <li><a href="#">GUIAS</a></li>
+                    <li><a href="#">COLEÇÃO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content-area">
+            <section class="news-feed">
+                <div class="retro-box orange-border">
+                    <h2 class="box-header">ÚLTIMAS NOTÍCIAS</h2>
+                    <div class="news-item blue-bg">
+                        <span class="pixel-icon joystick"></span>
+                        <p>Análise de 'Pixel Odyssey 2' publicada! - <a href="#">Ler Agora</a></p>
+                    </div>
+                    <div class="news-item blue-bg">
+                        <span class="pixel-icon ship"></span>
+                        <p>Destaque de Console Retro: A Lenda de '85. - <a href="#">Ver Mais</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="retro-box blue-border">
+                    <h3 class="box-header">TOP 5 CLÁSSICOS</h3>
+                    <ul class="pixel-list">
+                        <li>1. Chrono Trigger</li>
+                        <li>2. Super Mario World</li>
+                        <li>3. Sonic the Hedgehog 2</li>
+                        <li>4. The Legend of Zelda: ALttP</li>
+                        <li>5. Street Fighter II</li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="retro-footer">
+            <p>DESIGNED BY GAMERS FOR GAMERS | EST. 199X</p>
+        </footer>
+    </div>
+
 </body>
 </html>
